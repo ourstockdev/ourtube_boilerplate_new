@@ -1,0 +1,77 @@
+name: ourtube_boilerplate
+description: Ourtube Boilerplate.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  ## UI
+  cupertino_icons: ^1.0.2
+  flutter_easyloading: ^3.0.0
+  infinite_scroll_pagination: ^3.1.0
+  flutter_svg: ^0.21.0+1
+  flutter_styled_toast: ^2.0.0
+
+  # Network
+  dio: ^4.0.0
+  retrofit: ^2.0.1
+  json_annotation: ^4.4.0
+  connectivity_plus: ^2.2.1
+
+  # Utility
+  url_launcher: ^6.0.9 # URL 실행(앱이 있다면 앱으로 실행)
+  equatable: ^2.0.3 # equals, hashcode, toString 오버라이딩
+  local_auth: 1.1.8 # 생체인식
+  uuid: ^3.0.5 # uuid
+  package_info_plus: ^1.4.0 # 앱 버전
+  collection: ^1.15.0 # 두 리스트의 동일성 체크 용
+
+  # Persistence
+  hive_flutter: ^1.1.0
+
+  # State Management
+  get: 4.6.1
+
+dev_dependencies:
+  flutter_lints: ^1.0.4
+  logger: ^1.1.0
+
+  flutter_test:
+    sdk: flutter
+  test:
+  mockito: ^5.0.16
+
+  # Generators
+  build_runner: ^2.1.4
+  json_serializable: ^6.0.1
+  retrofit_generator:
+  hive_generator:
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: noto_sans_bold
+      fonts:
+        - asset: fonts/NotoSans-Bold.otf
+
+    - family: noto_sans_medium
+      fonts:
+        - asset: fonts/NotoSans-Medium.otf
+
+    - family: noto_sans_regular
+      fonts:
+        - asset: fonts/NotoSans-Regular.otf
+
+module:
+  androidX: true
